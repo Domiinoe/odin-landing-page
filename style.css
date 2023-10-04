@@ -1,7 +1,6 @@
 body{
-    max-width: 100vw;
-    max-height: 100vh;
-    text-align: center;
+    /* min-height: 100vh; */
+    font-family: 'Roboto Slab', serif;;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,21 +8,32 @@ body{
     /* justify-content: space-between; */
 }
 
-/* Header---------------------------------- */
+nav, header, footer{
+    background-color: #1f2937;
+    color: white;
+}
+/* Navigation---------------------------------- */
 nav.row{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
+    gap: 50px;
 }
 .links{
+    width: 700px;
+    /* background-color: red; */
     display: flex;
     gap: 15px;
+}
+.links.left{
+    justify-content: flex-start;
+}
+.links.right{
+    justify-content: flex-end;
 }
 
 h3{
     color: #f9faf8;
-    margin :;
     font-size: 24px;
 }
 a, li{
@@ -32,14 +42,52 @@ a, li{
     list-style-type: none;
     text-decoration: none;
 }
-
-
-
-nav, header, footer{
-    background-color: #1f2937;
-    color: white;
+ul{
+    padding: 0;
+}
+/* Header--------------------------------------- */
+header.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 300px;
+}
+div.top{
+    /* background-color: red; */
+    width: 700px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
 }
 
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: #f9faf8;
+    margin: 0;
+}
+
+p{
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 10px 0;
+}
+button{
+    background-color: #3883f6;
+    color: #f9faf8;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 1px solid #3883f6;
+    border-radius: 5px;
+    width: 120px;
+    box-shadow: 0 5px 20px #142f57;
+}
+/* Quote-------------------------- */
 .quote{
     background-color: #e5e7eb;
     color: #1f2937;
