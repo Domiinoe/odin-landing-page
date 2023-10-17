@@ -5,15 +5,13 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* background-color: #1f2937; */
 }
 
 nav, header, footer{
-    background-color: #1f2937;
+    background-color: #716448;
     color: white;
-    /* height: 2rem; */
+}
+
 }
 header, section{
     flex: 1;
@@ -57,6 +55,9 @@ a, li{
 ul{
     padding: 0;
 }
+.logo{
+    border-radius: 50px;
+}
 /* Header--------------------------------------- */
 header.header{
     display: flex;
@@ -91,17 +92,40 @@ p.header{
 }
 
 div button{
-    background-color: #3883f6;
-    color: #f9faf8;
+    background-color: #E3E0CB;
+    color: #716448;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 5px 15px;
-    border: 1px solid #3883f6;
+    /* border: 1px solid #E3E0CB; */
+    border: none;
     border-radius: 5px;
     width: 120px;
-    box-shadow: 0 5px 20px #142f57;
     /* margin: 0; */
 }
+
+div button:hover{
+    background-image: linear-gradient(to right, #716448, #C0AD77, #DACC99, #E3E0CB);
+    box-shadow: 0 2px 2px white;
+    color: white;
+}
+
+.header-img{
+    width: 500px;
+    height: 220px;
+    box-shadow: 0 2px 10px black;
+    background-image: url(images/shea-2.jpg);
+    background-size: 110% 120%;
+    background-position: center center;
+    transition: background-position 180s;
+}
+
+.header-img:hover{
+    background-size: 120% 130%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px white;
+}
+
 /* Sections cards-----------------------*/
 section.cards{
     text-align: center;
@@ -128,14 +152,14 @@ h2{
 .card-img{
     width: 140px;
     height: 140px;
-    border: 5px solid #3883f6;
+    border: 5px solid #E3E0CB;
     border-radius: 15px;
 }
 
 
 /* Quote-------------------------- */
 section.quote{
-    background-color: #e5e7eb;
+    background-color: #DACC99;
     color: #1f2937;
     font-size: 1.75rem;
     font-style: italic;
@@ -160,12 +184,12 @@ section.sign-up{
     align-items: center;
 }
 div.sign{
-    background-color: #3883f6;
-    color: white;
+    background-color: #E3E0CB;
+    color: #716448;
     width: 900px;
     height: 100px;
     margin: 80px 0 80px 0;
-    border: 5px solid #3883f6;
+    border: 5px solid #E3E0CB;
     border-radius: 15px;
     display: flex;
     justify-content: space-around;
