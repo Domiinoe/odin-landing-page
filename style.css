@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Macondo', cursive;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -57,6 +57,10 @@ ul{
 }
 .logo{
     border-radius: 50px;
+}
+.socials:hover{
+    box-shadow: 0 2px 10px 2px white;
+    border-radius: 10px;
 }
 /* Header--------------------------------------- */
 header.header{
@@ -155,6 +159,11 @@ h2{
     border: 5px solid #E3E0CB;
     border-radius: 15px;
 }
+.card-img:hover{
+    border: 5px solid transparent;
+    box-shadow: 0 2px 5px black;
+    opacity: 0.8;
+}
 
 
 /* Quote-------------------------- */
@@ -168,10 +177,15 @@ section.quote{
     align-items: center;
 }
 blockquote{
-    /* background-color: red; */
     width: 800px;
     font-weight: 100;
     margin: 80px 0 0 0;
+}
+
+blockquote:hover{
+    background-color: #E3E0CB;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 1px #C0AD77;
 }
 cite{
     margin-bottom: 80px;
